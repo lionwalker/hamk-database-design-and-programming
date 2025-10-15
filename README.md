@@ -72,6 +72,8 @@ The repository contains the following files and information:
 
 - Presentation - Final presentation ( Planned and Finalized by Chathuri Anuththara)
 
+- Project Report - Final Project report (Created by Sasvi Vidunadi Ranasinghe)
+
 ## Technologies Used
 - Database: MySQL 
 - Tools: MySQL Workbench, ERDPlus, Draw.io, Creately, Jira
