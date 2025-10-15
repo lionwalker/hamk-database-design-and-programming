@@ -174,6 +174,8 @@ Let’s check key tables:
 
 ## Project Management & Scrum Team
 This project is developed using Agile Scrum methodology. We use **JIRA** to manage our backlog, sprints, and epics.
+<img width="auto" height="auto" alt="Jira Summary Home Screen" src="images/Jira-SummaryScreen.png" /> 
+
 
 ### Team Roles
 - Product Owner: Sasvi Vidunadi Ranasinghe
@@ -197,6 +199,11 @@ To provide transparency into our Agile workflow, we’ve included screenshots fr
 - Order Workflow
 - Payment Integration
 - Audit Logging
+<img width="auto" height="auto" alt="Epic_1" src="images/Jira-Epic.png" /> 
+</br>
+<img width="auto" height="auto" alt="Epic_1" src="images/Jira-Epic-2.png" /> 
+</br>
+<img width="auto" height="auto" alt="Epic_1" src="images/Jira-Epic-3.png" /> 
 
 These visuals demonstrate our commitment to iterative development, team coordination, and delivery of working software each sprint.
 
