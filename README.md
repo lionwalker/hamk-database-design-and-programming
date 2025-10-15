@@ -187,6 +187,7 @@ To provide transparency into our Agile workflow, we’ve included screenshots fr
 ### Backlog Overview
 - Shows prioritized user stories with clear acceptance criteria
 - Includes story points and labels for epics and components
+<img width="auto" height="auto" alt="Sprint Board" src="images/Backlog_Overview.png" /> 
 
 ### Sprint Board
 - Displays active sprint tasks across columns: To Do, In Progress, Done
