@@ -174,7 +174,7 @@ Let’s check key tables:
 
 ## Project Management & Scrum Team
 This project is developed using Agile Scrum methodology. We use **JIRA** to manage our backlog, sprints, and epics.
-<img width="auto" height="auto" alt="Jira Summary Home Screen" src="images/Jira-SummaryScreen.png" /> 
+<img width="auto" height="auto" alt="Jira Summary Home Screen" src="images/Jira_Summary_Screen.jpeg" /> 
 
 
 ### Team Roles
@@ -192,7 +192,7 @@ To provide transparency into our Agile workflow, we’ve included screenshots fr
 ### Sprint Board
 - Displays active sprint tasks across columns: To Do, In Progress, Done
 - Reflects real-time collaboration and progress tracking
-<img width="auto" height="auto" alt="Sprint Board" src="images/Sprint.png" /> 
+<img width="auto" height="auto" alt="Sprint Board" src="images/Sprint.jpeg" /> 
 
 ### Epics Breakdown
 Highlights major functional areas such as:
