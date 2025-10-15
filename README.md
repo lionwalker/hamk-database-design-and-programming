@@ -52,18 +52,21 @@ This project meets the goals of the Database Design and Programming module by:
 The repository contains the following files and information:
 
 - ER_Diagram.png – Entity Relationship diagram. (To be updated by Sasvi Vidunadi Ranasinghe)
-<img width="3330" height="1836" alt="online_shop_er_final" src="" />
+<img width="auto" height="auto" alt="online_shop_er_final" src="" />
 
 - UML_ClassDiagram.png – Class diagram for system design. ( Created by all team membersa)
-<img width="3330" height="5709" alt="Online Shop Class Diagram" src="" /> 
+<img width="auto" height="auto" alt="Online Shop Class Diagram" src="images/UML_ClassDiagram.jpg" /> 
 
-- Relational_Schema.pdf – Tables with attributes, primary/foreign keys, constraints. (To be updated by Lahiru Hewawasam)
+- Relational_Schema.png – Tables with attributes, primary/foreign keys, constraints. (Created by Lahiru Madhusanka Hewawasam Halloluwage)
+<img width="auto" height="auto" alt="Online Shop Class Diagram" src="images/Relational_Schema.png" /> 
 
-- DDL.sql – SQL CREATE TABLE statements. (To be updated by Lahiru Hewawasam)
+- [Workbench_Model.mwb](docs/Workbench_Model.mwb) – Tables with attributes, primary/foreign keys, constraints. (Created by Lahiru Madhusanka Hewawasam Halloluwage)
 
-- DML.sql – Sample data insertions. (To be updated by Lahiru Hewawasam)
+- [DDL.sql](docs/DDL.sql) – SQL CREATE TABLE statements. (Created by Lahiru Madhusanka Hewawasam Halloluwage)
 
-- DQL.sql – queries (joins, aggregates, subqueries). (To be updated by Lahiru Hewawasam)
+- [DML.sql](docs/DML.sql) – Sample data insertions. (Created by Lahiru Madhusanka Hewawasam Halloluwage)
+
+- [DQL.sql](docs/DQL.sql) – Select queries (joins, aggregates, subqueries). (Created by Lahiru Madhusanka Hewawasam Halloluwage)
 
 - README.md – Project documentation (Created and updated by Lahiru Bandaranayake)
 
@@ -81,7 +84,7 @@ The repository contains the following files and information:
 - Install MySQL (or PostgreSQL if used).
 - Install MySQL Workbench (optional for ER diagrams).
 
-#### Steps
+### Steps
 1. Clone the repository:
    
     `git clone https://github.com/<username>/hamk-database-design-and-programming.git
@@ -100,6 +103,22 @@ cd hamk-database-design-and-programming`
     `mysql -u username -p < DQL.sql`
 
 ## Example Queries
+To demonstrate the analytical capabilities of our database design, here’s a sample query that calculates total spend per customer by joining customers and orders tables:
+
+```sql
+SELECT 
+    c.id AS customer_id, 
+    CONCAT(c.first_name, ' ', c.last_name) AS customer_name,
+    ROUND(SUM(o.total), 2) AS total_spent
+FROM customers c
+JOIN orders o ON c.id = o.customer_id
+GROUP BY c.id, customer_name
+ORDER BY total_spent DESC;
+```
+
+This query provides insight into customer purchasing behavior and is useful for loyalty analysis, marketing segmentation, or dashboard reporting.
+
+**Note:** You can find more advanced queries in the [DQL.sql](docs/DQL.sql) file, including joins, aggregates, subqueries, and HAVING clauses.
 
 ## Normalization
 Normalization ensures:
