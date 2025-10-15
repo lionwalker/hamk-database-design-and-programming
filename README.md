@@ -191,6 +191,7 @@ To provide transparency into our Agile workflow, we’ve included screenshots fr
 ### Sprint Board
 - Displays active sprint tasks across columns: To Do, In Progress, Done
 - Reflects real-time collaboration and progress tracking
+<img width="auto" height="auto" alt="Sprint Board" src="images/Sprint.png" /> 
 
 ### Epics Breakdown
 - Highlights major functional areas such as:
