@@ -52,7 +52,7 @@ This project meets the goals of the Database Design and Programming module by:
 The repository contains the following files and information:
 
 - ER_Diagram.png – Entity Relationship diagram. (To be updated by Sasvi Vidunadi Ranasinghe)
-<img width="auto" height="auto" alt="online_shop_er_final" src="" />
+<img width="auto" height="auto" alt="online_shop_er_final" src="images/online_shop_er_final.png" />
 
 - UML_ClassDiagram.png – Class diagram for system design. ( Created by all team members)
 <img width="auto" height="auto" alt="Online Shop Class Diagram" src="images/UML_ClassDiagram.jpg" /> 
