@@ -195,7 +195,7 @@ To provide transparency into our Agile workflow, we’ve included screenshots fr
 <img width="auto" height="auto" alt="Sprint Board" src="images/Sprint.png" /> 
 
 ### Epics Breakdown
-- Highlights major functional areas such as:
+Highlights major functional areas such as:
 - User Management
 - Product Catalog
 - Order Workflow
@@ -208,4 +208,6 @@ To provide transparency into our Agile workflow, we’ve included screenshots fr
 <img width="auto" height="auto" alt="Epic_1" src="images/Jira-Epic-3.png" /> 
 
 These visuals demonstrate our commitment to iterative development, team coordination, and delivery of working software each sprint.
+
+
 
