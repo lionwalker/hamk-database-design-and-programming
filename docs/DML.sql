@@ -157,3 +157,68 @@ VALUES
 ('payments', 4, 'INSERT', '{"method":"fund_transfer","status":"pending","amount":129.99,"order_id":4}', 1001, NOW(), '192.168.1.10', 'Initial data load'),
 ('payments', 5, 'INSERT', '{"method":"credit","status":"refunded","amount":89.99,"order_id":5}', 1001, NOW(), '192.168.1.10', 'Initial data load'),
 ('payments', 6, 'INSERT', '{"method":"fund_transfer","status":"paid","amount":229.98,"order_id":6}', 1001, NOW(), '192.168.1.10', 'Initial data load');
+
+-- -----------------------------------------------------
+-- Mark Old Orders as Archived
+-- -----------------------------------------------------
+UPDATE orders
+SET status = 'cancelled'
+WHERE created_at < CURRENT_DATE - INTERVAL 1 YEAR
+  AND status != 'delivered';
+
+-- -----------------------------------------------------
+-- Apply Bulk Discount to Low-Selling Products
+-- -----------------------------------------------------
+UPDATE products
+SET price = price * 0.90
+WHERE id IN (
+    SELECT product_id
+    FROM order_items
+    GROUP BY product_id
+    HAVING SUM(quantity) < 5
+);
+
+-- -----------------------------------------------------
+-- Update Customer Email Format
+-- -----------------------------------------------------
+UPDATE customers
+SET email = LOWER(email)
+WHERE email IS NOT NULL;
+
+-- -----------------------------------------------------
+-- Update Shipment Status to Delivered
+-- -----------------------------------------------------
+UPDATE shipments
+SET status = 'delivered', updated_at = NOW()
+WHERE tracking_number = 'FI987654321';
+
+-- -----------------------------------------------------
+-- Delete Cancelled Orders Older Than 6 Months
+-- -----------------------------------------------------
+DELETE FROM orders
+WHERE status = 'cancelled'
+  AND created_at < CURRENT_DATE - INTERVAL 6 MONTH;
+
+-- -----------------------------------------------------
+-- Remove Products with Zero Stock and No Orders
+-- -----------------------------------------------------
+DELETE FROM products
+WHERE quantity = 0
+  AND id NOT IN (
+    SELECT DISTINCT product_id FROM order_items
+);
+
+-- -----------------------------------------------------
+-- Delete Orphaned Addresses
+-- -----------------------------------------------------
+DELETE FROM addresses
+WHERE customer_id NOT IN (
+    SELECT id FROM customers
+);
+
+-- -----------------------------------------------------
+-- Delete Payments with Refunded Status Older Than 1 Year
+-- -----------------------------------------------------
+DELETE FROM payments
+WHERE status = 'refunded'
+  AND created_at < CURRENT_DATE - INTERVAL 1 YEAR;
