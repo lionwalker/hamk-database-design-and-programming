@@ -187,7 +187,7 @@ To provide transparency into our Agile workflow, we’ve included screenshots fr
 ### Backlog Overview
 - Shows prioritized user stories with clear acceptance criteria
 - Includes story points and labels for epics and components
-<img width="auto" height="auto" alt="Sprint Board" src="images/Backlog_Overview.png" /> 
+<img width="auto" height="auto" alt="Sprint Board" src="images/Backlog_Overview.jpeg" /> 
 
 ### Sprint Board
 - Displays active sprint tasks across columns: To Do, In Progress, Done
@@ -201,11 +201,11 @@ Highlights major functional areas such as:
 - Order Workflow
 - Payment Integration
 - Audit Logging
-<img width="auto" height="auto" alt="Epic_1" src="images/Jira-Epic.png" /> 
+<img width="auto" height="auto" alt="Epic_1" src="images/Epic-1.jpeg" /> 
 </br>
-<img width="auto" height="auto" alt="Epic_1" src="images/Jira-Epic-2.png" /> 
+<img width="auto" height="auto" alt="Epic_1" src="images/Epic-2.jpeg" /> 
 </br>
-<img width="auto" height="auto" alt="Epic_1" src="images/Jira-Epic-3.png" /> 
+<img width="auto" height="auto" alt="Epic_1" src="images/Epic-3.jpeg" /> 
 
 These visuals demonstrate our commitment to iterative development, team coordination, and delivery of working software each sprint.
 
