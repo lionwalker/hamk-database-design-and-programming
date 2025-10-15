@@ -54,7 +54,7 @@ The repository contains the following files and information:
 - ER_Diagram.png – Entity Relationship diagram. (To be updated by Sasvi Vidunadi Ranasinghe)
 <img width="auto" height="auto" alt="online_shop_er_final" src="" />
 
-- UML_ClassDiagram.png – Class diagram for system design. ( Created by all team membersa)
+- UML_ClassDiagram.png – Class diagram for system design. ( Created by all team members)
 <img width="auto" height="auto" alt="Online Shop Class Diagram" src="images/UML_ClassDiagram.jpg" /> 
 
 - Relational_Schema.png – Tables with attributes, primary/foreign keys, constraints. (Created by Lahiru Madhusanka Hewawasam Halloluwage)
@@ -174,6 +174,8 @@ Let’s check key tables:
 
 ## Project Management & Scrum Team
 This project is developed using Agile Scrum methodology. We use **JIRA** to manage our backlog, sprints, and epics.
+<img width="auto" height="auto" alt="Jira Summary Home Screen" src="images/Jira_Summary_Screen.jpeg" /> 
+
 
 ### Team Roles
 - Product Owner: Sasvi Vidunadi Ranasinghe
@@ -185,18 +187,27 @@ To provide transparency into our Agile workflow, we’ve included screenshots fr
 ### Backlog Overview
 - Shows prioritized user stories with clear acceptance criteria
 - Includes story points and labels for epics and components
+<img width="auto" height="auto" alt="Sprint Board" src="images/Backlog_Overview.jpeg" /> 
 
 ### Sprint Board
 - Displays active sprint tasks across columns: To Do, In Progress, Done
 - Reflects real-time collaboration and progress tracking
+<img width="auto" height="auto" alt="Sprint Board" src="images/Sprint.jpeg" /> 
 
 ### Epics Breakdown
-- Highlights major functional areas such as:
+Highlights major functional areas such as:
 - User Management
 - Product Catalog
 - Order Workflow
 - Payment Integration
 - Audit Logging
+<img width="auto" height="auto" alt="Epic_1" src="images/Epic-1.jpeg" /> 
+</br>
+<img width="auto" height="auto" alt="Epic_1" src="images/Epic-2.jpeg" /> 
+</br>
+<img width="auto" height="auto" alt="Epic_1" src="images/Epic-3.jpeg" /> 
 
 These visuals demonstrate our commitment to iterative development, team coordination, and delivery of working software each sprint.
+
+
 
