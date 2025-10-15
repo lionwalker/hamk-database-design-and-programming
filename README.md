@@ -52,7 +52,7 @@ This project meets the goals of the Database Design and Programming module by:
 The repository contains the following files and information:
 
 - ER_Diagram.png – Entity Relationship diagram. (To be updated by Sasvi Vidunadi Ranasinghe)
-<img width="auto" height="auto" alt="online_shop_er_final" src="" />
+<img width="auto" height="auto" alt="online_shop_er_final" src="online_shop_er_final.png" />
 
 - UML_ClassDiagram.png – Class diagram for system design. ( Created by all team members)
 <img width="auto" height="auto" alt="Online Shop Class Diagram" src="images/UML_ClassDiagram.jpg" /> 
@@ -210,6 +210,7 @@ Highlights major functional areas such as:
 <img width="auto" height="auto" alt="Epic_1" src="images/Epic-3.jpeg" /> 
 
 These visuals demonstrate our commitment to iterative development, team coordination, and delivery of working software each sprint.
+
 
 
 
