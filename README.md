@@ -5,7 +5,7 @@ This project is being developed in parallel with the Software Application Develo
 ## Team 06 - Members
 - Lahiru Madhusanka Hewawasam Halloluwage, lionwalker, amk1002573@student.hamk.fi
 - Himihami Mudiyanselage Lahiru Bandaranayake, LahiruBandaranayake, amk1004101@student.hamk.fi
-- Sasvi Vidunadi Ranasinghe, sasvi23, amk1005778@student.hamk.fi'
+- Sasvi Vidunadi Ranasinghe, sasvi23, amk1005778@student.hamk.fi
 - Udalmaththa Gamage Chathuri Anuththara Karunarathna, Anu2344, amk1004058@student.hamk.fi 
 
 # Online Shop Application Development System 
@@ -215,7 +215,7 @@ These visuals demonstrate our commitment to iterative development, team coordina
 
 The Online Shop Application System successfully demonstrates the full cycle of designing and implementing a relational database for an e-commerce environment. It provides a structured and normalized data model that manages core business operations such as customer management, product cataloging, order processing, payments, and shipments.
 
-By using ER modeling, class diagrams, and SQL (DDL, DML, and queries), this project ensures data integrity, consistency, and scalability. The inclusion of an audit log further enhances accountability by tracking every data modification within the system.
+By using ER modeling, class diagrams, and SQL (DDL, DML, and DQL), this project ensures data integrity, consistency, and scalability. The inclusion of an audit log further enhances accountability by tracking every data modification within the system.
 
 Project management was carried out using the SCRUM methodology with Jira, allowing efficient collaboration, sprint planning, and progress tracking among the development team. Version control was maintained through GitHub, ensuring traceability of all updates and team contributions.
 
