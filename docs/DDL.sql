@@ -76,6 +76,7 @@ CREATE TABLE IF NOT EXISTS `online_shop`.`orders` (
   `customer_id` INT UNSIGNED NOT NULL,
   PRIMARY KEY (`id`),
   INDEX `fk_orders_customers_idx` (`customer_id` ASC),
+  INDEX `idx_order_status` (`status` ASC),
   CONSTRAINT `fk_orders_customers`
     FOREIGN KEY (`customer_id`)
     REFERENCES `online_shop`.`customers` (`id`)
@@ -121,6 +122,7 @@ CREATE TABLE IF NOT EXISTS `online_shop`.`shipments` (
   `order_id` INT UNSIGNED NOT NULL,
   PRIMARY KEY (`id`),
   INDEX `fk_shipments_orders1_idx` (`order_id` ASC),
+  INDEX `idx_shipment_status` (`status` ASC),
   CONSTRAINT `fk_shipments_orders1`
     FOREIGN KEY (`order_id`)
     REFERENCES `online_shop`.`orders` (`id`)
@@ -159,6 +161,7 @@ CREATE TABLE IF NOT EXISTS `online_shop`.`payments` (
   `order_id` INT UNSIGNED NOT NULL,
   PRIMARY KEY (`id`),
   INDEX `fk_payments_orders1_idx` (`order_id` ASC),
+  INDEX `idx_payment_status` (`status` ASC),
   CONSTRAINT `fk_payments_orders1`
     FOREIGN KEY (`order_id`)
     REFERENCES `online_shop`.`orders` (`id`)
